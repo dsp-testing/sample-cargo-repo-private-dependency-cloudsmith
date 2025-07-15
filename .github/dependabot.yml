@@ -12,9 +12,4 @@ updates:
     registries: 
       - cargo-example
     schedule:
-      interval: "daily"
-    groups:
-      artifactory-dependency-group:
-        patterns:
-          - "*" # Soon, we'll use "delta_*"
-          
+      interval: "weekly"
