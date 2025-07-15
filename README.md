@@ -1,0 +1,1 @@
+cargo-private-registry-test
