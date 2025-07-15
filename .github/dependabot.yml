@@ -17,3 +17,4 @@ updates:
       artifactory-dependency-group:
         patterns:
           - "*" # Soon, we'll use "delta_*"
+          
