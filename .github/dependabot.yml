@@ -1,15 +1,19 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
 version: 2
 registries:
   cargo-example:
     type: cargo-registry
     registry: "thavaahariharan-test"
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
-    token: "Token ${{secrets.CARGO_TOKEN}}"
-    
+    token: "Bearer ${{secrets.CARGO_TOKEN}}"
 updates:
-  - package-ecosystem: "cargo"
-    directory: "/"
-    registries: 
-      - cargo-example
+  - package-ecosystem: "cargo" # See documentation for possible values
+    directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    registries:
+      - cargo-example
