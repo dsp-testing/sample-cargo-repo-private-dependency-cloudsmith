@@ -1,16 +1,16 @@
 version: 2
 registries:
-  artifactory:
+  cargo-example:
     type: cargo-registry
-    registry: "artifactory"
+    registry: "thavaahariharan-test"
     url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
-    token: "Bearer ${{secrets.CARGO_TOKEN}}"
+    token: "Token ${{secrets.CARGO_TOKEN}}"
     
 updates:
   - package-ecosystem: "cargo"
     directory: "/"
     registries: 
-      - "artifactory"
+      - cargo-example
     schedule:
       interval: "daily"
     groups:
