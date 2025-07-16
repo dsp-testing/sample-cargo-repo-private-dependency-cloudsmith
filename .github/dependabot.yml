@@ -8,7 +8,7 @@ registries:
   cargo-example:
     type: cargo-registry
     registry: "thavaahariharan-test"
-    url: https://jfrogghdemo.jfrog.io/artifactory/api/cargo/dependabot-cargo/index/
+    url: https://cargo.cloudsmith.io/thavaahariharan/repo/
     token: "Bearer ${{secrets.CARGO_TOKEN}}"
 updates:
   - package-ecosystem: "cargo" # See documentation for possible values
