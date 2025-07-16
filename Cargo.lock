@@ -3,14 +3,14 @@
 version = 4
 
 [[package]]
-name = "custom-package"
-version = "0.1.0"
-source = "sparse+https://cargo.cloudsmith.io/thavaahariharan/repo/"
-checksum = "40a2cce455eef2f00aec305a1f6131dd444359d02ecc501d1c88cc5b7fbfc998"
-
-[[package]]
 name = "cargo_private_registry_test"
 version = "0.1.0"
 dependencies = [
  "custom-package",
 ]
+
+[[package]]
+name = "custom-package"
+version = "0.2.0"
+source = "sparse+https://cargo.cloudsmith.io/thavaahariharan/repo/"
+checksum = "99c4d5cb88247727078f4e17eac62ea85e6db2b4aa4badecdce1103ed41af837"
